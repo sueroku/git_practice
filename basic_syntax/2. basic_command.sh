@@ -45,7 +45,7 @@ git pull origin 브랜치명
 git checkout .
 # staging area 에서 취소 (UI에서 가능)
 git reset
-# commit 이후의 취소 (중요) 커밋 기록을 없애자
+# commit 이후의 취소 (중요)
 git reset HEAD~1
 git reset HEAD^
 # push 이후의 취소 (중요)
