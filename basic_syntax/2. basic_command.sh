@@ -22,11 +22,17 @@ git log
 git log --oneline
 # 전체 이력 조회
 git log --all
-# 로그를 그래프 형태로 조회
-git log --graph
+# 로그를 그래프 형태로 조회 
+git log --graph # 원라인과 같이 쓸 수 있음
 
 # 원격저장소로 업로드
 git push origin 브랜치명
 
 # 충돌 무시하고 강제 push
 git push origin master --force
+
+# 특정 commit ID로 전환 : 중요 커밋아이디의 메세지(수정사항) 잘 써라 그래야 돌아갈 수 있다.
+git checkout 커밋아이디
+
+# 다시 현재의 master(브렌치)의 commit으로 return 
+git checkout master
