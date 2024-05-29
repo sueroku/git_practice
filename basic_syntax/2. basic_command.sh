@@ -13,6 +13,10 @@ git commit -m "메세지타이틀" -m "메세지내용"
 # vi 모드에서 작성, git commit 후 엔터
 # 수연님.. 보고싶어요..... 
 
+# add와 commit 동시에
+git commit -am "메세지"
+
+
 
 
 
