@@ -59,3 +59,17 @@ git config --global user.email "이메일"
 # 현재 레파지토리에 한해서만 사용자 변경
 git config --local user.name "이름"
 git config --local user.email "이메일"
+
+# 전체 config 내용 조회
+# repository, 이름 , email 등...
+git config --list
+# 사용자 이름 조회
+git config user.name
+# 사용자 email 조회
+git config user.email
+git config remote.origin.url
+
+# git ignore 파일 실습
+# 확장자 .gitignore 파일 생성 후 git 추적 제외 대상 나열
+# build 결과물들 : 개발한 소스코드가 실행가능한 상태로 바뀌는 작업, 코드 (.java->.class)
+# 보안상 올리면 안되는 파일들 / 로그파일
