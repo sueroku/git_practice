@@ -9,8 +9,8 @@ git push origin
 
 # github 인증방법 2가지
 # 1. token 인증방식 : github에서 직접 보안키(token) 발급
-
 # 2. 제 3자인증(oauth)방식
+
 
 
 # git 프로젝트 생성방법 2가지
@@ -30,3 +30,29 @@ git remote set-url origin 레포주소
 
 # git 설정정보 조회
 git config --list
+
+# 실습 1. 강사님 레포 kimseonguk197 깃 주소에서 아무거나 repo(flutter_shop)로 가져가기
+# 1) commit ID 를 다 유지한 채 가져가기 (탐작업 후 가져가기)
+# git remote set-url origin 내레포주소 -> push (master만 남는다. 모든 branch까지는 나중에)
+# 2) COMMIT ID 전부 없애고 내 레포인것처럼 가져가기 
+# .git 폴더 삭제 -> git init -> git remote add origin 내레포 -> add commit push
+
+# 타인레포 clone 방법 2가지
+# 1) 커밋 이력 그대로 가져오기
+git clone 타인레포주소 # 이후 해당 폴더로 이동 후 git 명령어
+git remote set-url origin 내레포주소 # 이후 별도의 add commit 필요 없고 바로 push 가능
+git push origin master(혹은 main)
+# 2) 커밋 이력 없이 가져오기
+git clone 타인레포주소 # 이후 해당 폴더로 이동 후 .git 폴더 삭제
+git init
+git remote add origin 내레포주소
+git add .
+git commit -m 'first' # 하는 이유 : 커밋 이력이 없기 때문
+git push origin master
+
+# 사용자 지정 방법
+# 전역적 사용자(이름, email) 지정
+git config --global user.name "이름"
+git config --global user.email "이메일"
+
+# 지역적 사용자(이름, email) 지정
