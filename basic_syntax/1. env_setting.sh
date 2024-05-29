@@ -13,8 +13,6 @@ git push origin
 # 2. 제 3자인증(oauth)방식
 
 
-
-
 # git 프로젝트 생성방법 2가지
 # 방법1. 원격 repo 생성 후 clone
 
