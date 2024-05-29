@@ -1,3 +1,20 @@
+# git add . 모든 변경사항 workspace->staging area로 이동
+git add .
+
+# git commit staging area의 변경사항을 확정짓고 commitID 생성 -> 로컬repo
+git commit -m
+
+# 원격 repo 에 upload
+git push origin
+
+# github 인증방법 2가지
+# 1. token 인증방식 : github에서 직접 보안키(token) 발급
+
+# 2. 제 3자인증(oauth)방식
+
+
+
+
 # git 프로젝트 생성방법 2가지
 # 방법1. 원격 repo 생성 후 clone
 
