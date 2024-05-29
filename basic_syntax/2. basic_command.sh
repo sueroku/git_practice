@@ -38,3 +38,15 @@ git checkout 커밋아이디 # 분기 처리 하지말구.. 그냥 수정사항�
 git checkout master
 
 # git pull 은 원격의 변경사항을 local로 다운로드
+git pull origin 브랜치명
+
+# git 작업 취소
+# working directory 에서 취소 (UI에서 가능)
+git checkout .
+# staging area 에서 취소 (UI에서 가능)
+git reset
+# commit 이후의 취소 (중요)
+git reset HEAD~1
+git reset HEAD^
+# push 이후의 취소 (중요)
+git revert 커밋ID
