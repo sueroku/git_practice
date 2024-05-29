@@ -32,7 +32,9 @@ git push origin 브랜치명
 git push origin master --force
 
 # 특정 commit ID로 전환 : 중요 커밋아이디의 메세지(수정사항) 잘 써라 그래야 돌아갈 수 있다.
-git checkout 커밋아이디
+git checkout 커밋아이디 # 분기 처리 하지말구.. 그냥 수정사항만 확인하고 오는게 나을거에요. 상황따라 다르다.
 
 # 다시 현재의 master(브렌치)의 commit으로 return 
 git checkout master
+
+# git pull 은 원격의 변경사항을 local로 다운로드
