@@ -74,7 +74,7 @@ git stash clear # 저장한 stash 목록 전체 삭제
 
 # 버전명시 taggin
 git tag v1.0
-git tag v1.0 -m "1. 주요사항 2. 주요사항 (변경사항등등)"
+git tag v1.0 -m "1. 주요사항 2. 주요사항 (변경사항등등)" # 명시하는 게 좋다.
 
 # tag release 배포 
 # commit push 와 상관없이 tag(release) 별도 push
@@ -82,3 +82,13 @@ git push origin v1.0
 
 # 태그 목록 조회
 git tag
+
+# 브랜치 생성
+# 현재 checkout하고 있는 브랜치를 기준으로 브랜치 생성
+git branch 브랜치명
+
+# 해당 브랜치로 전환
+git checkout 브랜치명
+
+# 브랜치 목록 조회
+git branch
