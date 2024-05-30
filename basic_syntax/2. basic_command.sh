@@ -74,7 +74,7 @@ git stash clear # 저장한 stash 목록 전체 삭제
 
 # 버전명시 taggin
 git tag v1.0
-git tag v1.0 -m "1. 주요사항 2. 주요사항 (변경사항등등)"
+git tag v1.0 -m "1. 주요사항 2. 주요사항 (변경사항등등)" # 명시하는 게 좋다.
 
 # tag release 배포 
 # commit push 와 상관없이 tag(release) 별도 push
