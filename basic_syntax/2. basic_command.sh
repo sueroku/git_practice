@@ -71,3 +71,14 @@ git stash pop # 저장한 최신의 작업목록 꺼내기
 git stash list # 저장한 작업 사항 목록 조회
 git stash show -p 인덱스 # 저장한 작업 목록 상세 조회
 git stash clear # 저장한 stash 목록 전체 삭제
+
+# 버전명시 taggin
+git tag v1.0
+git tag v1.0 -m "1. 주요사항 2. 주요사항 (변경사항등등)"
+
+# tag release 배포 
+# commit push 와 상관없이 tag(release) 별도 push
+git push origin v1.0
+
+# 태그 목록 조회
+git tag
